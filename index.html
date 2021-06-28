@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+ <div class="container">
+    <table>
+      <tr>
+        <td>
+          <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+              <label>NPM</label><label class="validation-error hide" id="npmValidationError">This field is required.</label>
+              <input type="text" name="npm" id="npm" />
+            </div>
+            <div>
+              <label>NAMA</label>
+              <input type="text" name="nama" id="nama" />
+            </div>
+            <div>
+              <label>ALAMAT</label>
+              <input type="text" name="alamat" id="alamat" />
+            </div>
+            <div>
+              <label>E-MAIL</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div class="btn-tambah">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </td>
+
+        <td>
+          <table class="list" id="employeeList">
+            <thead>
+              <tr>
+                <th>NPM</th>
+                <th>NAMA</th>
+                <th>ALAMAT</th>
+                <th>E-MAIL</th>
+                <th>AKSI</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+</div>
+  </body>
+</html>
+</html>
